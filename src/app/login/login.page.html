@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="login-grid">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" sizeMd="6" sizeLg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Weekly Food Chart Maker</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="stacked">Email</ion-label>
+              <ion-input
+                type="email"
+                [(ngModel)]="email"
+                autocomplete="email"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Password</ion-label>
+              <ion-input
+                type="password"
+                [(ngModel)]="password"
+                autocomplete="current-password"
+              ></ion-input>
+            </ion-item>
+
+            <ion-text color="danger" *ngIf="errorMessage">
+              <p class="error-text">{{ errorMessage }}</p>
+            </ion-text>
+
+            <ion-button
+              expand="block"
+              [disabled]="loading || !email || !password"
+              (click)="onLogin()"
+            >
+              Login
+            </ion-button>
+
+            <ion-button
+              expand="block"
+              fill="outline"
+              [disabled]="loading || !email || !password"
+              (click)="onRegister()"
+            >
+              Register
+            </ion-button>
+
+            <ion-button
+              expand="block"
+              color="medium"
+              [disabled]="loading"
+              (click)="onGoogleLogin()"
+            >
+              Continue With Google
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
