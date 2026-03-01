@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">DevOps lifecycle</title>
+  <desc id="desc">A simple DevOps lifecycle diagram showing plan, code, build, test, release, deploy, operate, and monitor in a loop.</desc>
+  <rect width="960" height="540" fill="#f4efe6"/>
+  <text x="480" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#1f2937">DevOps Lifecycle</text>
+  <circle cx="480" cy="270" r="170" fill="none" stroke="#c97342" stroke-width="10"/>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#102a43">
+    <rect x="415" y="95" width="130" height="48" rx="24" fill="#ffd9c2"/><text x="480" y="126" text-anchor="middle">Plan</text>
+    <rect x="625" y="160" width="130" height="48" rx="24" fill="#ffe9a8"/><text x="690" y="191" text-anchor="middle">Code</text>
+    <rect x="690" y="270" width="130" height="48" rx="24" fill="#c8f2d6"/><text x="755" y="301" text-anchor="middle">Build</text>
+    <rect x="625" y="380" width="130" height="48" rx="24" fill="#bde7f7"/><text x="690" y="411" text-anchor="middle">Test</text>
+    <rect x="415" y="445" width="130" height="48" rx="24" fill="#d9d2ff"/><text x="480" y="476" text-anchor="middle">Release</text>
+    <rect x="205" y="380" width="130" height="48" rx="24" fill="#ffc6cc"/><text x="270" y="411" text-anchor="middle">Deploy</text>
+    <rect x="140" y="270" width="130" height="48" rx="24" fill="#ffe0b5"/><text x="205" y="301" text-anchor="middle">Operate</text>
+    <rect x="205" y="160" width="130" height="48" rx="24" fill="#cde6c7"/><text x="270" y="191" text-anchor="middle">Monitor</text>
+  </g>
+  <text x="480" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#c97342">Automation + Feedback</text>
+</svg>
